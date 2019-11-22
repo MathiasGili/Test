@@ -59,4 +59,23 @@ It was decided to do the first and second exercises in the same project.
 2. The first problem is solved with the method GetRefCodRefText  
     a. First read the file XML from XMLFile1  
     B. GetRefCodRefText recive the XML file  
-    c. GetRefCodRefTex return a Dictionary with Keyvaluepair (Key - RefCode, Value - RefText) 
+    c. GetRefCodRefTex return a Dictionary with Keyvaluepair (Key - RefCode, Value - RefText)     
+
+```
+        public static Dictionary<string, string> GetRefCodRefText(XmlDocument doc)
+        {
+            string MWB = doc.SelectSingleNode("//Reference[@RefCode='MWB']").InnerText;
+            string CAR = doc.SelectSingleNode("//Reference[@RefCode='CAR']").InnerText;
+            string TRV = doc.SelectSingleNode("//Reference[@RefCode='TRV']").InnerText;
+            Dictionary<string, string> values = new Dictionary<string, string>();
+            values.Add("MWB", MWB);
+            values.Add("CAR", CAR);
+            values.Add("TRV", TRV);
+            foreach (var value in values)
+            {
+                Console.WriteLine(value.Key + " - " + value.Value); 
+            }
+            return values;
+
+        }
+```
