@@ -15,7 +15,7 @@ It was decided to do the first and second exercises in the same project.
 
 
 
-```
+```csharp
        public static string[] ParseLOC(string stringWithLOC)
         {
             try
@@ -63,7 +63,7 @@ It was decided to do the first and second exercises in the same project.
     B. GetRefCodRefText recive the XML file  
     c. GetRefCodRefTex return a Dictionary with Keyvaluepair (Key - RefCode, Value - RefText)     
 
-```
+```csharp
         public static Dictionary<string, string> GetRefCodRefText(XmlDocument doc)
         {
             string MWB = doc.SelectSingleNode("//Reference[@RefCode='MWB']").InnerText;
