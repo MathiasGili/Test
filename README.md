@@ -1,6 +1,8 @@
 # Test
 
-Developer Technical Questions.
+Developer Technical Questions.  
+
+DEMO: App/netcoreapp2.2/win-x64/test.exe
 
 It was decided to do the first and second exercises in the same project.    
 1. The first problem is solved with the method ParseLOC  
