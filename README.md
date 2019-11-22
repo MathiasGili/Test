@@ -1,6 +1,4 @@
-# Test
-
-Developer Technical Questions.  
+###Developer Technical Questions.  
 
 DEMO: App/netcoreapp2.2/win-x64/test.exe
 
